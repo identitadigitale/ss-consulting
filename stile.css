@@ -5,11 +5,23 @@
     box-sizing: border-box;
 }
 
+/* Ensure html and body take full height */
+html, body {
+    height: 100%;
+}
+
 /* Stili del corpo */
 body {
     font-family: 'Montserrat', sans-serif;
     background-color: #f0f0f0;
     color: #2d3436;
+}
+
+/* Make the wrapper a flex container */
+.wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 /* Contenitore del biglietto */
@@ -23,6 +35,7 @@ body {
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
     display: flex;
     flex-direction: column;
+    flex: 1; /* Allow the main content to grow and fill available space */
 }
 
 /* Sezione del logo */
