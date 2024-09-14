@@ -8,6 +8,8 @@
 /* Ensure html and body take full height */
 html, body {
     height: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 /* Stili del corpo */
@@ -35,7 +37,7 @@ body {
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
     display: flex;
     flex-direction: column;
-    flex: 1; /* Allow the main content to grow and fill available space */
+    /* Removed flex: 1; to prevent stretching */
 }
 
 /* Sezione del logo */
@@ -94,6 +96,7 @@ body {
     background-color: #2d3436;
     text-align: center;
     padding: 15px;
+    margin-top: auto; /* Pushes the footer to the bottom when content is short */
 }
 
 .footer p {
